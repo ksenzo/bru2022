@@ -4001,7 +4001,7 @@ main {
    color: #ffffff;
    max-width: 1110px;
    text-align: center;
-   z-index: 2;
+   z-index: 1;
 }
 
 .full-screen__video {
@@ -4015,7 +4015,7 @@ main {
 }
 
 .full-screen__play-btn {
-   z-index: 2;
+   z-index: 1;
 }
 
 .dark-background-wrap {
