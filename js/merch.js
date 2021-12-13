@@ -13,14 +13,17 @@ let popUpBody = document.querySelector('.popup__body');
 let popUp = document.querySelector('.popup');
 let popUpClose = document.querySelector('.popup__img-close');
 let shopBagMobile = document.getElementById('shop-bag-img-mobile');
+let productBeerBody = document.querySelector('.product-beer__body ');
 
 
 window.onscroll = function showHeaderCollection() {
    let fixedHeaderCollection = document.querySelector('.header-collection');
    if (window.pageYOffset > 25) {
       fixedHeaderCollection.classList.add('__fixed');
+      productBeerBody.style.margin = "115px 0 0 0"
    } else {
       fixedHeaderCollection.classList.remove('__fixed');
+      productBeerBody.style.margin = "0 0 0 0"
    }
 };
 
