@@ -59,7 +59,7 @@ for (let i = 0; i < plusBtn.length; i++) {
 
 window.onscroll = function showHeader() {
    let fixedHeader = document.querySelector('.header-homepage');
-   if (window.pageYOffset > 50) {
+   if (window.pageYOffset > 25) {
       fixedHeader.classList.add('header-homepage__fixed');
    } else {
       fixedHeader.classList.remove('header-homepage__fixed');
