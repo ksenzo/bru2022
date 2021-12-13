@@ -15,6 +15,15 @@ let popUpClose = document.querySelector('.popup__img-close');
 let shopBagMobile = document.getElementById('shop-bag-img-mobile');
 
 
+window.onscroll = function showHeaderCollection() {
+   let fixedHeaderCollection = document.querySelector('.header-collection');
+   if (window.pageYOffset > 25) {
+      fixedHeaderCollection.classList.add('__fixed');
+   } else {
+      fixedHeaderCollection.classList.remove('__fixed');
+   }
+};
+
 if (shopBag) {
    shopBag.addEventListener('click', function (e) {
       popUpBody.classList.add('__active');
