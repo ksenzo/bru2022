@@ -143,7 +143,7 @@ if (productImgFour) {
 
 window.onscroll = function showHeaderCollection() {
    let fixedHeaderCollection = document.querySelector('.header-collection');
-   if (window.pageYOffset > 50) {
+   if (window.pageYOffset > 25) {
       fixedHeaderCollection.classList.add('__fixed');
    } else {
       fixedHeaderCollection.classList.remove('__fixed');
