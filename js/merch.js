@@ -12,6 +12,9 @@ let popUpClose = document.querySelector('.popup__img-close');
 let shopBagMobile = document.getElementById('shop-bag-img-mobile');
 let productBeerBody = document.querySelector('.product-beer__body');
 let productSlider = document.querySelector('.product-beer__slider');
+let openMenuCollectionBtn = document.querySelector('.header-collection__menu-burger');
+let closeMenuCollectionBtn = document.getElementById('closeImgCollection');
+let body = document.body;
 
 
 
@@ -94,6 +97,32 @@ if (productImgFour) {
       productImgFour.classList.add('__active');
       imgProductTitle.src = 'img/bru-cap/cap1.png';
       sourceProductTitle.srcset = 'img/bru-cap/cap1.webp';
+   });
+}
+
+if (openMenuCollectionBtn) {
+   const menuActive = document.querySelector('.header-collection__menu-mobile');
+   openMenuCollectionBtn.addEventListener('click', function (e) {
+      menuActive.classList.add('__active');
+   });
+}
+
+if (closeMenuCollectionBtn) {
+   const menuActive = document.querySelector('.header-collection__menu-mobile');
+   closeMenuCollectionBtn.addEventListener('click', function (e) {
+      menuActive.classList.remove('__active');
+   });
+}
+
+if (openMenuCollectionBtn) {
+   openMenuCollectionBtn.addEventListener('click', function (e) {
+      body.classList.add('__noscroll');
+   });
+}
+
+if (closeMenuCollectionBtn) {
+   closeMenuCollectionBtn.addEventListener('click', function (e) {
+      body.classList.remove('__noscroll');
    });
 }
 
